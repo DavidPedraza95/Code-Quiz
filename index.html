@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quiz</title>
+    <link rel="stylesheet" type="text/css" href="assets/cs/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="startpage">
+            <h2>Welcome to the knowledge quiz</h2>
+            <h2>You will be tested on various concepts</h2>
+            <h3>You may begin by selcting the "Start Code Quiz" button below</h3>
+        <button id="startbtn">Start Code Quiz</button>
+        <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">Remaining time: </div>
+                <div id="questions"><p>Questions Placeholder</p></div>
+                    <button id="a" onclick="checkAnswer('a')">A</button>
+                    <button id="b" onclick="checkAnswer('b')">B</button>
+                    <button id="c" onclick="checkAnswer('c')">C</button>
+                    <button id="d" onclick="checkAnswer('d')">D</button>
+                <div id="result"></div>
+        </div>
+        <div id="gameover">
+
+            <div id="finalScore"></div>
+            <input type="text" size = "50" placeholder="Enter your initals to record your score" name="intials" id="initials"/>
+            <button id="submitScore">Submit Score</button>
+        </div>
+        <div id=highscoreContainer>
+        <div id="high-scorePage">
+            <div id="highscore-header">
+                <h3>Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id = "highscore-initials"></div>
+            <div id = "highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+            <button id="playAgain" onclick="replayQuiz()">One more time? 😎 </button>
+            <button id="clearHighscore" onclick="clearScore()">Clear Highscore Chart</button>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
